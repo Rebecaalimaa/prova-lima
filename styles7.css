@@ -1,0 +1,136 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+
+}
+
+.menu-toggle {
+    font-size: 30px;
+    padding: 10px;
+    background-color: #0220a3;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+
+.slide-menu.active {
+    left: 0;
+}
+
+.menu-toggle.active {
+    left: 250px;
+}
+
+.slide-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #0220a3;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.slide-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.slide-menu ul li {
+    padding: 15px;
+}
+
+.slide-menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.slide-menu ul li a:hover {
+    background-color: #0220a3;
+}
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Estilos principais */
+main {
+    padding: 20px;
+}
+
+/* Estilos para as categorias */
+.categoria {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categoria h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.categoria ul {
+    list-style-type: none;
+}
+
+.categoria ul li {
+    margin-bottom: 10px;
+}
+
+.categoria ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.1rem;
+}
+
+.categoria ul li a:hover {
+    color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
